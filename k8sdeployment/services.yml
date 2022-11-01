@@ -5,7 +5,7 @@ metadata:
   labels:
     app: app-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: web-app
   ports:
@@ -20,7 +20,7 @@ metadata:
   labels:
     app: redis
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: redis
   ports:
